@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package backend;
+
+service Backend {
+  rpc Upscale (Image) returns (Image) {}
+}
+
+message Image {
+  bytes data = 1;
+}
